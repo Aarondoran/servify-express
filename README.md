@@ -22,9 +22,10 @@ After installing the package, you can use it to easily start an Express server a
 
 Example usage:
 
-`const StartServer = require('servify-express');
+`const StartServer = require('servify-express');`
 
-// Start server on port 3000 StartServer.use(3000);`
+`// Start server on port 3000`
+`StartServer.use(3000);`
 
 If you don’t pass a port, it will default to port `3000`.
 
