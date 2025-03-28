@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servify Express Docs</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
-        body { background-color: #1e1e2e; color: #cdd6f4; font-family: sans-serif; }
-        pre { background-color: #313244; padding: 10px; border-radius: 8px; overflow-x: auto; }
+        body { background-color: #1e1e2e; color: #cdd6f4; font-family: sans-serif; overflow-x: hidden; }
+        pre { background-color: #313244; padding: 10px; border-radius: 8px; overflow-x: auto; opacity: 0; }
         code { color: #89b4fa; }
     </style>
 </head>
@@ -19,13 +20,13 @@
     
     <section class="mb-6">
         <h2 class="text-2xl font-semibold">Installation</h2>
-        <pre><code>npm install servify-express</code></pre>
+        <pre class="code-block"><code>npm install servify-express</code></pre>
     </section>
     
     <section class="mb-6">
         <h2 class="text-2xl font-semibold">Usage</h2>
         <p>Import the package and start the server:</p>
-        <pre><code>const StartServer = require('servify-express');
+        <pre class="code-block"><code>const StartServer = require('servify-express');
 
 StartServer.use(3000);</code></pre>
         <p>This starts an Express server on port 3000 and logs the port automatically.</p>
@@ -41,7 +42,16 @@ StartServer.use(3000);</code></pre>
     </section>
     
     <footer class="text-center mt-6 text-gray-400">
-        <p>Made by Aaron</p>
+        <p>Made by Aarond11</p>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.fromTo(".code-block", 
+                { opacity: 0, x: "random(-300, 300)", y: "random(-300, 300)", rotation: "random(-360, 360)" }, 
+                { opacity: 1, x: 0, y: 0, rotation: 0, duration: 1.5, stagger: 0.3, ease: "power4.out" }
+            );
+        });
+    </script>
 </body>
 </html>
