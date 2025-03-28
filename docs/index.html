@@ -8,41 +8,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body { background-color: #1e1e2e; color: #cdd6f4; font-family: sans-serif; overflow-x: hidden; }
-        pre { background-color: #313244; padding: 10px; border-radius: 8px; overflow-x: auto; opacity: 0; }
+        pre { background-color: #313244; padding: 16px; border-radius: 8px; overflow-x: auto; opacity: 0; margin-top: 16px; }
         code { color: #89b4fa; }
+        section { margin-bottom: 48px; opacity: 0; }
     </style>
 </head>
-<body class="p-6">
-    <header class="text-center mb-6">
-        <h1 class="text-4xl font-bold text-[#89b4fa]">Servify Express</h1>
-        <p class="text-lg text-gray-400">Easily start an Express server with minimal setup.</p>
+<body class="p-12">
+    <header class="text-center mb-12">
+        <h1 class="text-5xl font-bold text-[#89b4fa] mb-4">Servify Express</h1>
+        <p class="text-xl text-gray-400">Easily start an Express server with minimal setup.</p>
     </header>
     
-    <section class="mb-6">
-        <h2 class="text-2xl font-semibold">Installation</h2>
+    <section class="fade-in">
+        <h2 class="text-3xl font-semibold">Installation</h2>
         <pre class="code-block"><code>npm install servify-express</code></pre>
     </section>
     
-    <section class="mb-6">
-        <h2 class="text-2xl font-semibold">Usage</h2>
-        <p>Import the package and start the server:</p>
+    <section class="fade-in">
+        <h2 class="text-3xl font-semibold">Usage</h2>
+        <p class="mb-4">Import the package and start the server:</p>
         <pre class="code-block"><code>const StartServer = require('servify-express');
 
 StartServer.use(3000);</code></pre>
-        <p>This starts an Express server on port 3000 and logs the port automatically.</p>
+        <p class="mt-4">This starts an Express server on port 3000 and logs the port automatically.</p>
     </section>
     
-    <section class="mb-6">
-        <h2 class="text-2xl font-semibold">Features</h2>
-        <ul class="list-disc pl-6">
+    <section class="fade-in">
+        <h2 class="text-3xl font-semibold">Features</h2>
+        <ul class="list-disc pl-6 mt-4">
             <li>Minimal setup, just one function call.</li>
             <li>Automatically logs the running port.</li>
             <li>Works seamlessly with any Express app.</li>
         </ul>
     </section>
     
-    <footer class="text-center mt-6 text-gray-400">
-        <p>Made by Aarond11</p>
+    <footer class="text-center mt-12 text-gray-400">
+        <p>Made by <a href="https://aarondoran.me">Aaron Doran</a></p>
     </footer>
     
     <script>
@@ -51,6 +52,8 @@ StartServer.use(3000);</code></pre>
                 { opacity: 0, x: "random(-300, 300)", y: "random(-300, 300)", rotation: "random(-360, 360)" }, 
                 { opacity: 1, x: 0, y: 0, rotation: 0, duration: 1.5, stagger: 0.3, ease: "power4.out" }
             );
+            
+            gsap.to(".fade-in", { opacity: 1, y: -10, duration: 1.2, stagger: 0.3, ease: "power2.out", delay: 0.5 });
         });
     </script>
 </body>
