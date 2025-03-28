@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servify Express Docs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #1e1e2e; color: #cdd6f4; font-family: sans-serif; }
+        pre { background-color: #313244; padding: 10px; border-radius: 8px; overflow-x: auto; }
+        code { color: #89b4fa; }
+    </style>
+</head>
+<body class="p-6">
+    <header class="text-center mb-6">
+        <h1 class="text-4xl font-bold text-[#89b4fa]">Servify Express</h1>
+        <p class="text-lg text-gray-400">Easily start an Express server with minimal setup.</p>
+    </header>
+    
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Installation</h2>
+        <pre><code>npm install servify-express</code></pre>
+    </section>
+    
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Usage</h2>
+        <p>Import the package and start the server:</p>
+        <pre><code>const StartServer = require('servify-express');
+
+StartServer.use(3000);</code></pre>
+        <p>This starts an Express server on port 3000 and logs the port automatically.</p>
+    </section>
+    
+    <section class="mb-6">
+        <h2 class="text-2xl font-semibold">Features</h2>
+        <ul class="list-disc pl-6">
+            <li>Minimal setup, just one function call.</li>
+            <li>Automatically logs the running port.</li>
+            <li>Works seamlessly with any Express app.</li>
+        </ul>
+    </section>
+    
+    <footer class="text-center mt-6 text-gray-400">
+        <p>Made by Aaron</p>
+    </footer>
+</body>
+</html>
