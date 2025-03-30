@@ -25,13 +25,13 @@ Example usage:
 `const StartServer = require('servify-express');`
 
 `// Start server on port 3000`
-`StartServer.use(3000);`
+`StartServer.listen(3000);`
 
 If you don’t pass a port, it will default to port `3000`.
 
 ### **How it Works**
 
-- The `use()` method will start an Express server and log a message to the console: "Server is running on port `<PORT_NUMBER>`".
+- The `listen()` method will start an Express server and log a message to the console: "Server is running on port `<PORT_NUMBER>`".
 - You can specify a custom port number, or leave it blank for the default of `3000`.
 
   
