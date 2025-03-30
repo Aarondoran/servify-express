@@ -1,6 +1,6 @@
 {
   "name": "servify-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple package to start an Express server and log port information",
   "main": "index.js",
   "scripts": {
