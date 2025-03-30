@@ -1,7 +1,7 @@
 const express = require("express");
 
 class StartServer {
-    static use(port) {
+    static listen(port) {
         const app = express();
 
         // Middleware (optional)
@@ -14,8 +14,9 @@ class StartServer {
 
         // Start the server and log the default message
         app.listen(port, () => {
-            // Log default message directly
             console.log(`Server is running on port ${port}`);
         });
     }
-            
+}
+
+module.exports = StartServer;
