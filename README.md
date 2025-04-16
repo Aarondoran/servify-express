@@ -1,5 +1,11 @@
 # Servify Express
 [![Node.js Package](https://github.com/Aarondoran/servify-express/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/Aarondoran/servify-express/actions/workflows/npm-publish.yml)
+![GitHub Repo stars](https://img.shields.io/github/stars/Aarondoran/servify-express?style=flat)
+![GitHub watchers](https://img.shields.io/github/watchers/Aarondoran/servify-express?style=flat)
+![GitHub forks](https://img.shields.io/github/forks/Aarondoran/servify-express?style=flat)
+![GitHub License](https://img.shields.io/github/license/Aarondoran/servify-express)
+
+
 
 A simple Node.js package to start an Express server and log the port it's running on.
 
