@@ -1,5 +1,6 @@
 # Servify Express
-[![Node.js Package](https://github.com/Aarondoran/servify-express/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/Aarondoran/servify-express/actions/workflows/npm-publish.yml)
+![NPM Last Update](https://img.shields.io/npm/last-update/servify-express)
+![GitHub last commit](https://img.shields.io/github/last-commit/Aarondoran/Servify-express)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Aarondoran/servify-express?style=flat)
 ![GitHub watchers](https://img.shields.io/github/watchers/Aarondoran/servify-express?style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/Aarondoran/servify-express?style=flat)
