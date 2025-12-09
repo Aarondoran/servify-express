@@ -6,15 +6,16 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aarondoran/servify-express.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "url": "https://github.com/Aarondoran/servify-express.git"
   },
   "keywords": ["express", "server", "starter"],
-  "author": "Aaron",
+  "author": "Aaron Doran",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2"
