@@ -4,7 +4,7 @@
   "description": "A simple package to start an Express server and log port information",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
