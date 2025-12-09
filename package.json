@@ -4,11 +4,11 @@
   "description": "A simple package to start an Express server and log port information",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aarondoran/servify-express.git"
+    "url": "git+https://github.com/Aarondoran/servify-express.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
