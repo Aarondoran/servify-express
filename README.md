@@ -12,9 +12,27 @@ A simple Node.js package to start an Express server and log the port it's runnin
 
 ## Installation
 
-To install the package, run:
+### From npm
 
-`npm install servify-express`
+To install the package from npm, run:
+
+```bash
+npm install servify-express
+```
+
+### From GitHub Packages
+
+To install the package from GitHub Packages, first configure npm to use the GitHub Package Registry for the `@aarondoran` scope by adding a `.npmrc` file in your project:
+
+```
+@aarondoran:registry=https://npm.pkg.github.com
+```
+
+Then install the package:
+
+```bash
+npm install @aarondoran/servify-express
+```
 
 
 ## Usage
@@ -23,17 +41,23 @@ After installing the package, you can use it to easily start an Express server a
 
 1. **Import the package** into your project.
 
-`const StartServer = require('servify-express');`
+```javascript
+const StartServer = require('servify-express');
+// OR if installed from GitHub Packages:
+const StartServer = require('@aarondoran/servify-express');
+```
 
 
 2. **Call the `use` method** on the `StartServer` object and pass in the port number. The server will automatically start and log the port to the console.
 
 Example usage:
 
-`const StartServer = require('servify-express');`
+```javascript
+const StartServer = require('servify-express');
 
-`// Start server on port 3000`
-`StartServer.listen(3000);`
+// Start server on port 3000
+StartServer.listen(3000);
+```
 
 If you don’t pass a port, it will default to port `3000`.
 
