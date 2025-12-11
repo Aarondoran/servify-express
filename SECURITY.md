@@ -21,6 +21,8 @@ If the issue is critical, high-risk, or may impact many users, please email firs
 
 **Aarondoran@outlook.ie**
 
+Or submit a private report
+
 This allows coordinated communication before opening an advisory.
 
 ### Disclosure Expectations
