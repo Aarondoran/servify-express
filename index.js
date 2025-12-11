@@ -1,18 +1,24 @@
 const express = require("express");
+const rateLimit = require("express-rate-limit");
 
 class StartServer {
-    static listen(port) {
+    static listen(port, options = {}) {
         const app = express();
 
-        // Middleware (optional)
+        if (options.rateLimit) {
+            const limiter = rateLimit({
+                windowMs: options.rateLimit.windowMs || 60000,
+                max: options.rateLimit.max || 100
+            });
+            app.use(limiter);
+        }
+
         app.use(express.json());
 
-        // Default route (optional)
         app.get("/", (req, res) => {
             res.send("Server is running!");
         });
 
-        // Start the server and log the default message
         app.listen(port, () => {
             console.log(`Server is running on port ${port}`);
         });
