@@ -34,10 +34,9 @@ Then install the package:
 npm install @aarondoran/servify-express
 ```
 
-
 ## Usage
 
-After installing the package, you can use it to easily start an Express server and log the port it is running on. Here’s how to use it in your Node.js application:
+After installing the package, you can start an Express server with a single function call. You can also optionally enable rate limiting if you want.
 
 1. **Import the package** into your project.
 
@@ -46,27 +45,37 @@ const StartServer = require('servify-express');
 // OR if installed from GitHub Packages:
 const StartServer = require('@aarondoran/servify-express');
 ```
+2. **Call the ```listen``` method** and pass in the port number.
+You may also pass an options object if you want to enable rate limiting.
 
+### Basic example
 
-2. **Call the `use` method** on the `StartServer` object and pass in the port number. The server will automatically start and log the port to the console.
-
-Example usage:
-
-```javascript
+```
 const StartServer = require('servify-express');
 
-// Start server on port 3000
 StartServer.listen(3000);
 ```
 
-If you don’t pass a port, it will default to port `3000`.
+With optional rate limiting:
+```
+const StartServer = require('servify-express');
 
-### **How it Works**
+StartServer.listen(3000, {
+    rateLimit: {
+        windowMs: 60000,
+        max: 50
+    }
+});
+```
+if you dont add a port it will default to ```3000```.
 
-- The `listen()` method will start an Express server and log a message to the console: "Server is running on port `<PORT_NUMBER>`".
-- You can specify a custom port number, or leave it blank for the default of `3000`.
+## How It Works
+```listen()``` starts an Express server and logs:
+```Server is running on port <PORT_NUMBER>```
 
-  
+Rate limiting is only applied if you include the rateLimit option.
+If you leave it out, no rate limiting will be used.
+
 ### **License**
 
 This package is licensed under the MIT License.
