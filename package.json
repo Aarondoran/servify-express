@@ -1,6 +1,6 @@
 {
   "name": "@aarondoran/servify-express",
-  "version": "1.1.2",
+  "version": "1.2"
   "description": "A simple package to start an Express server and log port information",
   "main": "index.js",
   "scripts": {
