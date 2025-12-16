@@ -10,6 +10,10 @@
 
 A simple Node.js package to start an Express server and log the port it's running on.
 
+## my website
+
+[![Website](https://custom-icon-badges.demolab.com/badge/Aarondoran.me-blue?logo=aarondoran-pfp&labelColor=grey)](https://aarondoran.me)
+
 ## Installation
 
 ### From npm
