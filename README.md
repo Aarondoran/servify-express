@@ -1,4 +1,5 @@
 # Servify Express
+[![Publish to GitHub Packages](https://github.com/Aarondoran/servify-express/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/Aarondoran/servify-express/actions/workflows/npm-publish-github-packages.yml)
 ![NPM Last Update](https://img.shields.io/npm/last-update/servify-express)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Aarondoran/Servify-express)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Aarondoran/servify-express?style=flat)
