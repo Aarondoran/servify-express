@@ -21,7 +21,7 @@ jobs:
       - run: |
           # Override any existing .npmrc for this job
           echo "registry=https://registry.npmjs.org/" > .npmrc
-          echo "//registry.npmjs.org/:_authToken=${npm_token}" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
           npm publish --access public
         env:
           NPM_TOKEN: ${{ secrets.npm_token }}
