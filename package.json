@@ -1,5 +1,5 @@
 {
-  "name": "@aarondoran/servify-express",
+  "name": "@aarondoran-npm/servify-express",
   "version": "1.0.3",
   "description": "A simple package to start an Express server and log port information",
   "main": "index.js",
