@@ -1,14 +1,24 @@
-            - name: NPM OIDC Release
-  # You may pin to the exact commit or the version.
-  # uses: nicksteffens/npm-oidc-release@ce8ca8c12e9da4664d100e14a5056d68f6442f4e
-  uses: nicksteffens/npm-oidc-release@v1.3.0
-  with:
-    # Release type: release or prerelease
-    release_type: # optional, default is release
-    # Version increment (major, minor, patch) - leave blank for auto
-    increment: # optional, default is 
-    # Pre-release dist tag (only used for prerelease)
-    dist_tag: # optional, default is alpha
-    # NPM workspace name for monorepo releases (e.g., eslint-plugin-ui)
-    workspace: # optional, default is 
-          
+name: Publish to npm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - run: npm install
+
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
